@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700,800');
+
+/*bt overwrite*/
+@media screen and (min-width:768px){
+    .container{border-left:1px solid #444;border-right:1px solid #444}
+}
+@media screen and (min-width:1200px){
+    .container{width:1140px!important}
+}
+@media screen and (min-width:1300px){
+    .container{width:1240px!important}
+}
+@media screen and (min-width:1400px){
+    .container{width:1340px!important}
+}
+@media screen and (min-width:1500px){
+    .container{width:1440px!important}
+}
+*{font-family:"Open Sans 400",sans-serif}
+body{
+    border:1px solid #fff;
+}
+/*header*/
+header .navbar{margin-bottom:0}
+header .navbar-nav{float:right}
+header .navbar-brand{padding:15px 0}
+header #menu-cta{border-radius:2px;border:1px solid #0280c3;padding:5px 30px;margin-top:9px;color:#0280c3;transition:all.3s;cursor:pointer}
+header #menu-cta:hover{background-color:#0280c3;color:#fff}
+/*video-banner height:500px;*/
+#video-banner{height:500px;background-image:linear-gradient(137deg, #05a8ff, #0280c3)}
+#video-banner #video-banner-cta{height:500px;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#fff;
+background-image:url("/images/bldgs.svg");background-repeat:no-repeat;background-position:center bottom;background-size:102%}
+#video-banner #video-banner-cta p{font-size:18px}
+#video-banner #video-banner-video{height:500px;background-color:#71b6bd}
+/*partners*/
+#partners{text-align:center;border-bottom:1px solid #eaeaea;}
+#partners img{width:4%;margin:15px 10px;-webkit-filter:grayscale(100%);filter:grayscale(100%);transition:all.3s;cursor:pointer}
+#partners img:hover{-webkit-filter:grayscale(0%);filter:grayscale(0%);transform:scale(1.5);}
+/*sales-analytics*/
+#sales-analytics>div{padding:10px 0 40px;border-bottom:1px solid #eaeaea;}
+#sales-analytics>div:first-child{color:#f08d28;border-right:1px solid #eaeaea;}
+#sales-analytics>div:last-child{color:#0280c3;}
+#sales-analytics h2,#sales-analytics .cta-orange,#sales-analytics .cta-blue{margin:25px 23px 25px}
+#sales-analytics ul{}
+#sales-analytics ul li{padding:7px 0;letter-spacing:0.2px}
+#sales-analytics ul li span{color:#444;font-size:18px;}
+/*testimanials-one*/
+#testimanials-one{background-color:#f9f9f9;padding-bottom:50px}
+#testimanials-one h3{margin:20px 0}
+#testimanials-one>div{background-color:#fff;width:31.57%;margin:10px;min-height:275px;padding:15px;box-shadow:0 3px 5px -2px rgba(0,0,0,0.1)}
+#testimanials-one .testimanials-one-img{width:80px;height:80px;border-radius:50px;border:1px solid #eaeaea;float:left;padding:10px;display:flex;justify-content:center;align-items:center;margin-right:15px}
+#testimanials-one>div >div:nth-child(1){display:flex;align-items:center}
+#testimanials-one img{width:90%}
+/*advantage-one*/
+#advantage-one{text-align:center;margin:-25px auto 50px;overflow:hidden}
+#advantage-one>div{position:relative;background-color:#fff;width:31.57%;margin:0 10px 10px;min-height:150px;padding:15px;box-shadow:0 3px 5px -2px rgba(0,0,0,0.1)}
+#advantage-one h2{color:#f08d28;font-weight:900;}
+#advantage-one .shadow{margin:-67px auto -77px;font-size:100px;width:100%;color:rgba(0, 86, 132, 0.1);font-weight:900}
+/*excerption-one*/
+#excerption-one{color:#fff}
+#excerption-one #orange-block{background-color:#f08d28;min-height:300px;margin:19px 80px 0}
+#excerption-one #orange-block>div:first-child img{margin:-53px 0 0 -56px}
+#excerption-one #orange-block>div:last-child{height:300px;display:flex;justify-content:center;flex-direction:column;align-items:center}
+#excerption-one #orange-block>div:last-child>div{width:fit-content;height:fit-content;padding:5px;background-color: #f08d28;}
+#excerption-one #orange-block>div:last-child>p:first-child{width:85%;border-top:1px solid #fff;margin-bottom:-21px}
+#excerption-one #orange-block h3{font-weight:100;padding:0 50px;margin:10px auto 30px;}
+#excerption-one #orange-block>div:last-child h3+p{width:85%;border-top:1px solid #fff}
+/*cta-blue*/
+#cta-blue{
+    background-image:url("/images/bldgs.svg"),linear-gradient(95deg, #05a8ff, #0280c3);
+    background-repeat:repeat-x,no-repeat;
+    background-position:center bottom,center;
+}
+#cta-blue .cta-white{margin:35px auto 55px;}
+/*cta-gray*/
+#cta-gray{
+    background-color:#e9e9e9;
+}
+/*footer*/
+footer{background-color:#d8dfe5}
+footer>div:not(:last-child){border-bottom:1px solid #fff}
+footer ul{display:inline-flex}
+footer ul li{padding:15px 10px}
+/*buttons*/
+.cta-orange,.cta-orange-fill,.cta-blue,.cta-white{font-size:14px;width:fit-content;padding:7px 50px;text-align:center;transition:all.3s;cursor:pointer;border-radius:2px}
+.cta-orange{border:1px solid #f08d28}.cta-orange:hover{background-color:#f08d28;color:#fff}
+.cta-blue{border:1px solid #0280c3}.cta-blue:hover{background-color:#0280c3;color:#fff}
+.cta-orange-fill{background-color:#f08d28;color:#fff;border:1px solid #f08d28}.cta-orange-fill:hover{background-color:rgba(255,255,255,0.3)}
+.cta-white{background-color:#fff;border:1px solid #fff;color:#0280c3}.cta-white:hover{background-color:rgba(255,255,255,0.3);color:#fff}
