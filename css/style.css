@@ -45,19 +45,19 @@ background-image:url("/images/bldgs.svg");background-repeat:no-repeat;background
 #sales-analytics ul li{padding:7px 0;letter-spacing:0.2px}
 #sales-analytics ul li span{color:#444;font-size:18px;}
 /*testimanials-one*/
-#testimanials-one{background-color:#f9f9f9;padding-bottom:50px}
+#testimanials-one{background-color:#f9f9f9;padding:0 65px 50px}
 #testimanials-one h3{margin:20px 0}
 #testimanials-one>div{background-color:#fff;width:31.57%;margin:10px;min-height:275px;padding:15px;box-shadow:0 3px 5px -2px rgba(0,0,0,0.1)}
 #testimanials-one .testimanials-one-img{width:80px;height:80px;border-radius:50px;border:1px solid #eaeaea;float:left;padding:10px;display:flex;justify-content:center;align-items:center;margin-right:15px}
 #testimanials-one>div >div:nth-child(1){display:flex;align-items:center}
 #testimanials-one img{width:90%}
 /*advantage-one*/
-#advantage-one{text-align:center;margin:-25px auto 50px;overflow:hidden}
+#advantage-one{text-align:center;margin:-25px 50px 50px;overflow:hidden}
 #advantage-one>div{position:relative;background-color:#fff;width:31.57%;margin:0 10px 10px;min-height:150px;padding:15px;box-shadow:0 3px 5px -2px rgba(0,0,0,0.1)}
 #advantage-one h2{color:#f08d28;font-weight:900;}
-#advantage-one .shadow{margin:-67px auto -77px;font-size:100px;width:100%;color:rgba(0, 86, 132, 0.1);font-weight:900}
+#advantage-one .shadow{margin:-63px auto -74px;font-size:90px;width:100%;color:rgba(0, 86, 132, 0.1);font-weight:900}
 /*excerption-one*/
-#excerption-one{color:#fff
+#excerption-one{color:#fff}
 #excerption-one #orange-block{background-color:#f08d28;min-height:300px;margin:19px 80px 0}
 #excerption-one #orange-block>div:first-child img{margin:-53px 0 0 -56px}
 #excerption-one #orange-block>div:last-child{height:300px;display:flex;justify-content:center;flex-direction:column;align-items:center}
@@ -78,6 +78,7 @@ background-image:url("/images/bldgs.svg");background-repeat:no-repeat;background
     background-image:url("/images/bldgs2.svg");
     background-repeat:repeat-x;
     background-position:center bottom;
+    margin-bottom:80px;
 }
 #cta-gray>div{display:flex;width:100%;justify-content:center;align-items:center;}
 #cta-gray>div h2{margin:0}

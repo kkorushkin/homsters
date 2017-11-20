@@ -74,8 +74,7 @@
     </div>
 
     <div id="why-we" class="row">
-        <div class="col-sm-6"></div>
-        <div class="col-sm-6"></div>
+        <?php include 'includes/why-we.html';?>
     </div>
 
     <div id="contact-us-one" class="row">
