@@ -35,109 +35,44 @@
             </nav>
     </div>
 </header>
-
 <div class="container">
-
     <div id="video-banner" class="row">
         <?php include 'includes/video-banner.html';?>
     </div>
-
     <div id="partners" class="row">
        <?php include 'includes/partners.html';?>
     </div>
-
     <div id="sales-analytics" class="row">
         <?php include 'includes/sales-analytics.html';?>
     </div>
-
     <div id="testimanials-one" class="row">
         <?php include 'includes/testimanials-one.html';?>
     </div>
-
     <div id="cta-blue" class="row text-center">
         <div class="cta-white">Подключить мой ЖК</div>
     </div>
-
     <div id="advantage-one" class="row">
         <?php include 'includes/advantage-one.html';?>
     </div>
-
     <div id="excerption-one" class="row">
         <?php include 'includes/excerption-one.html';?>
     </div>
-
     <div id="cta-gray" class="row">
         <div>
             <h2>Начните работу абсолютно бесплатно!</h2>
             <div class="cta-orange-fill">Подключить мой ЖК</div>
         </div>
     </div>
-
     <div id="why-we" class="row">
         <?php include 'includes/why-we.html';?>
     </div>
-
-    <div id="contact-us-one" class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-5"></div>
-        <div class="col-sm-5"></div>
+    <div id="contact-us-one" class="row text-center">
+        <?php include 'includes/contact-us-one.html';?>
     </div>
-
     <footer class="row">
-        <div id="level-one" class="col-sm-12">
-            <div class="col-sm-2"><img src="images/homsters-kz-logo.svg" alt="homsters.kz"/></div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <a href="">Новостройки</a>
-                        <a href="">Вторичка</a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a href="">Застройщики</a>
-                        <a href="">Ипотека</a>
-                    </div>
-                    <div class="col-sm-4">
-                        <a href="">Акции</a>
-                        <a href="">Обзоры</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <form action="">
-                    <input type="text" name="email" value=""/>
-                    <input type="button" value="Подписаться на новости"/>
-                </form>
-            </div>
-            <div class="col-sm-2"></div>
-        </div>
-        <div id="level-two" class="col-sm-12 text-center">
-            <ul class="list-unstyled">
-                <li>О нас</li>
-                <li>Карьера</li>
-                <li>Новости</li>
-                <li>Блог</li>
-                <li>Акции</li>
-                <li>Сотрудничество</li>
-                <li>Рейтинг новостроек</li>
-                <li>Обзоры новостроек</li>
-                <li>Аналитика</li>
-            </ul>
-        </div>
-        <div id="level-three" class="col-sm-12 text-center">
-            <ul class="list-unstyled">
-                <li>Copyright2017@Homsters.kz</li>
-            </ul>
-            <ul class="list-unstyled">
-                <li>Карта сайта</li>
-                <li>Гид по недвижимости</li>
-                <li>Условия</li>
-                <li>Связаться</li>
-            </ul>
-        </div>
+        <?php include 'includes/footer.html';?>
     </footer>
-
 </div>
-
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
