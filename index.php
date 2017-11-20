@@ -67,7 +67,10 @@
     </div>
 
     <div id="cta-gray" class="row">
-        <div class="button-cta-orange"></div>
+        <div>
+            <h2>Начните работу абсолютно бесплатно!</h2>
+            <div class="cta-orange-fill">Подключить мой ЖК</div>
+        </div>
     </div>
 
     <div id="why-we" class="row">
