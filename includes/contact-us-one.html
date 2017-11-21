@@ -13,9 +13,10 @@
 </div>
 <div class="col-sm-5">
     <h4>Оставьте номер телефона и мы вам перезвоним</h4>
-    <form action="">
-        <input type="text" name="name" value="" placeholder="Имя" required />
-        <input type="email" name="email" value="" placeholder="Номер телефона" required />
-        <input type="button" class="cta-white" value="Жду звонка"/>
+    <form onsubmit="homstmail.callback($(this));return false;">
+        <input type="hidden" name="subj" value="Жду звонка"/>
+        <input type="text" name="name" placeholder="Имя" required />
+        <input type="tel" name="tel" placeholder="Номер телефона" required />
+        <input type="submit" class="cta-white" value="Жду звонка"/>
     </form>
 </div>

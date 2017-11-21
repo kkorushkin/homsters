@@ -28,7 +28,7 @@
                             <li class="active"><a href="#">Что говорят застройщики</a></li>
                             <li><a href="#">Цифры о нас</a></li>
                             <li><a href="#">Видео</a></li>
-                            <li><div id="menu-cta">Подключтить мой ЖК бесплатно</div></li>
+                            <li><div id="menu-cta" data-toggle="modal" data-target="#сall-me">Подключтить мой ЖК бесплатно</div></li>
                         </ul>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
         <?php include 'includes/testimanials-one.html';?>
     </div>
     <div id="cta-blue" class="row text-center">
-        <div class="cta-white">Подключить мой ЖК</div>
+        <div class="cta-white" data-toggle="modal" data-target="#сall-me">Подключить мой ЖК</div>
     </div>
     <div id="advantage-one" class="row">
         <?php include 'includes/advantage-one.html';?>
@@ -60,7 +60,7 @@
     <div id="cta-gray" class="row">
         <div>
             <h2>Начните работу абсолютно бесплатно!</h2>
-            <div class="cta-orange-fill">Подключить мой ЖК</div>
+            <div class="cta-orange-fill" data-toggle="modal" data-target="#сall-me">Подключить мой ЖК</div>
         </div>
     </div>
     <div id="why-we" class="row">
@@ -73,6 +73,24 @@
         <?php include 'includes/footer.html';?>
     </footer>
 </div>
+<!-- Modal -->
+<div id="сall-me" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <img src="/images/CdkGV2B9Rzuu4MLXapyd5g.png" alt="callback"/>
+            <h4>Заказать обратный звонок</h4>
+            <form onsubmit="homstmail.callback($(this));return false;">
+                <input type="hidden" name="subj" value="Подключтить мой ЖК"/>
+                <input type="text" name="name" value="" placeholder="Имя" required/>
+                <input type="text" name="tel" value="" placeholder="Телефон" required/>
+                <input type="submit" value="Позвонить мне"/>
+            </form>
+        </div>
+    </div>
+</div>
+<div id="alerts"></div>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>

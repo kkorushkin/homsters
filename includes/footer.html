@@ -17,9 +17,10 @@
         </div>
     </div>
     <div class="col-sm-5">
-        <form action="">
+        <form onsubmit="homstmail.callback($(this));return false;">
+            <input type="hidden" name="subj" value="Подписка на новости"/>
             <input type="text" name="email" value="" placeholder="Электронная почта" required />
-            <input type="button" class="cta-white" value="Подписаться на новости"/>
+            <input type="submit" class="cta-white" value="Подписаться на новости"/>
         </form>
     </div>
     <div class="col-sm-1">

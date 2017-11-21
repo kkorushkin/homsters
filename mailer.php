@@ -5,31 +5,15 @@ $adminemail = array(
     "kkorushkin@gmail.com"
 );
 
-if(!empty($_POST['query'])){
-
-    $qs = explode('&',$_POST['query']);
-
-    $t_id = array_pop($qs);
-    $utmt = explode('=',$t_id);
-    $t_id = $utmt[1];
-
-    foreach($qs as $v){
-        $utmt = explode('=',$v);
-        $utm .= $utmt[1]. "\n";
-    }
-
-}
-
 foreach($adminemail as $recipient){
     $date = date("d.m.y H:i");
     //$upload_dir = 'uploads';
 
-    $name = $_POST['name'];
-    $tel = $_POST['tel'];
+    $name  = $_POST['name'];
+    $tel   = $_POST['tel'];
     $email = $_POST['email'];
-    $sms = ($_POST['sms'])?'yes':'no';
-    $qs = explode('=',$_POST['query']);
-    $msg = "name: " . $name . "\n email: " . $email . "\n phone no.: " . $tel . "\n need sms: " . $sms. "\n" . $utm;
+    $subj  = $_POST['subj'];
+    $msg = ( ($name) ? "Имя: " . $name . "\n" : '' ) . ( ($email) ? "email: " . $email . "\n" : '' ) . ( ($tel) ? "тел.: " . $tel . "\n" : '' );
 
     $mail = new PHPMailer();
 
@@ -45,7 +29,7 @@ foreach($adminemail as $recipient){
     //$mail->SetFrom('');
     //$mail->AddReplyTo('');
     $mail->AddAddress($recipient);
-    $mail->Subject = "Message from HIGH-Q website " . $date;
+    $mail->Subject = $subj . " | " . $date;
     $mail->Body = $msg;
 
     /*foreach ($_FILES["fileFF"]["error"] as $key => $error) {
@@ -57,11 +41,6 @@ foreach($adminemail as $recipient){
         }
     }*/
 
-    $mail->Send();
+    echo ($mail->Send()) ? json_encode(1) : json_encode(0);
 }
-
-if(isset($t_id)){
-    echo $t_id;
-}
-
 
