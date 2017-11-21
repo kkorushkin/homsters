@@ -3,6 +3,7 @@
 <head lang="ru">
     <meta charset="UTF-8">
     <title>Продажа новостроя в Казахстане | homsters.kz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -25,8 +26,8 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Что говорят застройщики</a></li>
-                            <li><a href="#">Цифры о нас</a></li>
+                            <li><a href="#testimanials-one" data-to="testimanials-one">Что говорят застройщики</a></li>
+                            <li><a href="#advantage-one" data-to="advantage-one">Цифры о нас</a></li>
                             <li><a href="#">Видео</a></li>
                             <li><div id="menu-cta" data-toggle="modal" data-target="#сall-me">Подключтить мой ЖК бесплатно</div></li>
                         </ul>
@@ -48,7 +49,7 @@
     <div id="testimanials-one" class="row">
         <?php include 'includes/testimanials-one.html';?>
     </div>
-    <div id="cta-blue" class="row text-center">
+    <div id="cta-blue" class="row text-center live-bg">
         <div class="cta-white" data-toggle="modal" data-target="#сall-me">Подключить мой ЖК</div>
     </div>
     <div id="advantage-one" class="row">
@@ -57,7 +58,7 @@
     <div id="excerption-one" class="row">
         <?php include 'includes/excerption-one.html';?>
     </div>
-    <div id="cta-gray" class="row">
+    <div id="cta-gray" class="row live-bg">
         <div>
             <h2>Начните работу абсолютно бесплатно!</h2>
             <div class="cta-orange-fill" data-toggle="modal" data-target="#сall-me">Подключить мой ЖК</div>
@@ -69,7 +70,7 @@
     <div id="contact-us-one" class="row text-center">
         <?php include 'includes/contact-us-one.html';?>
     </div>
-    <footer class="row">
+    <footer>
         <?php include 'includes/footer.html';?>
     </footer>
 </div>

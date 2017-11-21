@@ -1,10 +1,27 @@
 (function($) {
 
     $(document).ready(function() {
+
         $('.counter-up').counterUp({
             delay: 10, // the delay time in ms
             time: 2000 // the speed time in ms
         });
+
+        //плавно к якорю
+        $('a').click(function(){
+            var anch = $(this).data('to');
+            $('html,body').animate({
+                scrollTop: $('#'+anch).offset().top //- correction
+            }, 1000, function(){
+                $('#'+anch).addClass('active');
+            });
+            return false;
+        });
+
+    });
+
+    $(document).scroll(function() {
+        $('.live-bg').css('background-position-x',$(document).scrollTop()/10 + 'px, center')
     });
 
     var $video = $('#homsters-presentation-video'),
@@ -45,7 +62,7 @@ var homstmail = {
             success: function(json) {
                 var message;
                 if(json == 1){
-                    message = 'Ваш запрос отправлен! Мы свяжемся с вами в ближайшее время.';
+                    message = 'Спасибо! Ваша заявка отправлена!';
                 }else{
                     message = 'Ваше запрос не отправлен! Попробуйте повторить отправку через время или свяжитесь с нами по контактным телефонам.';
                 }
