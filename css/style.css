@@ -120,6 +120,7 @@ background-image:url("/images/bldgs.svg");background-repeat:no-repeat;background
 /*footer*/
 footer{background-color:#d8dfe5;color:#6d8090;margin:0 -15px}
 footer #level-one{padding:25px 0;display:flex;align-items:center;margin:0 81px}
+footer #level-one,footer #level-two,footer #level-three{background-color:#d8dfe5}
 footer #level-one>div:last-child{text-align:right}
 footer #level-one>div:first-child img{width:80%}
 footer>div:nth-child(2){border-top:1px solid #fff;border-bottom:1px solid #fff}
