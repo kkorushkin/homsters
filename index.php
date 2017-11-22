@@ -11,7 +11,6 @@
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
-
 <header class="container">
     <div id="header-top" class="row">
         <nav class="navbar">
