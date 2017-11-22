@@ -128,7 +128,7 @@ footer ul{display:inline-flex}
 footer ul li{padding:15px 10px}
 footer a{color:#6d8090}
 footer input:not([type="submit"]){padding:6px;background:transparent;border:1px solid #fff;width:49%}
-footer input[type="submit"]{padding:6px 25px;color:#6d8090;width:49%}
+footer input[type="submit"]{padding:6px 25px;color:#6d8090;width:49%;margin:15px auto!important}
 footer input[type="submit"]:hover{color:#000}
 /*buttons*/
 .cta-orange,.cta-orange-fill,.cta-blue,.cta-white{font-size:14px;width:fit-content;padding:7px 50px;text-align:center;transition:all.3s;cursor:pointer;border-radius:2px}
@@ -149,7 +149,8 @@ input:valid{border:1px solid green!important;}*/
 /**/
 @media screen and (max-width:888px){
     h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{text-align:center}
-    .navbar-toggle .icon-bar{border:1px solid #000}
+    .cta-orange,.cta-orange-fill,.cta-blue,.cta-white{margin:45px auto!important}
+    .navbar-toggle .icon-bar{border:1px solid #0499e8}
     #header-top{margin:inherit}
     header .navbar-nav{float:none;text-align:center}
     #video-banner{display:block;text-align:center}
@@ -158,30 +159,40 @@ input:valid{border:1px solid green!important;}*/
     #video-banner #video-banner-cta .cta-orange-fill{padding:10px;width:100%}
     #video-banner #video-banner-cta p{font-size:16px}
     #partners img{width:13%;-webkit-filter:grayscale(0%);filter:grayscale(0%);margin:5px}
-    #testimanials-one>div{width:100%}
-    #contact-us-one{margin:0 -15px;border:none}
+    #sales-analytics ul{padding:0 10px 0 20px}
+    #sales-analytics ul li span{font-size:14px}
+    #cta-blue{padding-bottom:40px}
     #testimanials-one{padding:0}
+    #testimanials-one>div{width:100%}
     #testimanials-one>div>div{width:100%;margin:0;text-align:center}
     #advantage-one{margin:-15px 0 0}
     #advantage-one p{font-size:18px}
     #advantage-one>div{width:inherit;margin:0 0 20px 0;min-height:135px;overflow:hidden}
     #testimanials-one>div >div:nth-child(1){display:block}
+    #cta-gray{background-image:url("../images/bldgs22.png")}
     #cta-gray>div{display:block}
     #excerption-one #orange-block{min-height:260px}
     #excerption-one #orange-block{margin:200px 0 0}
     #excerption-one #orange-block h3{font-weight:100;padding:0;font-size:18px;letter-spacing:1px}
     #excerption-one #orange-block>div:last-child{min-height:220px}
     #excerption-one #orange-block>div:first-child img{margin:-151px 0 0;width:100%}
-    #cta-gray{margin-bottom:0}
+    #cta-gray{margin-bottom:0;padding-bottom:35px}
     #cta-gray>div h2{margin:30px 3px;font-size:21px}
-    #why-we{margin:0 -15px;display:block}
+    #why-we{margin:0 -15px;display:block;background-image:linear-gradient(148deg,#05a8ff,#0280c3)}
     #why-we h5{text-align:left}
     #why-we>div:first-child{padding:20px 15px 15px 40px}
-    #contact-us-one{display:block}
+    #contact-us-one{display:block;margin:30px 5px}
+    #contact-us-one>div:first-child{border-bottom:1px solid #dedede}
     #contact-us-one>div:last-child{padding:inherit}
+    #contact-us-one input[type="submit"]{margin-top:0!important}
     footer{margin:0 -15px}
-    footer #level-one{display:block;margin:0}
+    footer #level-one{display:block;margin:0;text-align:center;padding:25px 0 0}
+    footer #level-one>div:nth-child(2){padding:15px}
+    footer #level-one>div:nth-child(2) a{display:block;margin:10px 0}
+    footer #level-one>div:nth-child(3){border-top:1px solid #fff;border-bottom:1px solid #fff;padding:30px 30px 15px}
+    footer #level-one>div:last-child{text-align:center}
+    footer #level-one>div:last-child img{transform:scale(3);margin:27px}
+    footer #level-two ul li{width:50%;float:left}
     footer ul{display:block}
     footer input{width:100%!important}
-    .cta-orange,.cta-orange-fill,.cta-blue,.cta-white{margin:45px auto!important}
 }

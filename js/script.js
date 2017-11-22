@@ -20,9 +20,13 @@
 
     });
 
-    $(document).scroll(function() {
-        $('.live-bg').css('background-position-x',$(document).scrollTop()/10 + 'px, center')
-    });
+    if($(window).width() > 888){
+
+        $(document).scroll(function() {
+            $('.live-bg').css('background-position-x',$(document).scrollTop()/10 + 'px, center')
+        });
+
+    }
 
     var $video = $('#homsters-presentation-video'),
         $video_wrapper = $('video-banner-video'),
