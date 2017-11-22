@@ -26,7 +26,7 @@ foreach($adminemail as $recipient){
     $mail->Port = 25;
 
     $mail->CharSet = 'UTF-8';
-    //$mail->SetFrom('');
+    $mail->SetFrom('info@homsters.kz','homsters-lp');
     //$mail->AddReplyTo('');
     $mail->AddAddress($recipient);
     $mail->Subject = $subj . " | " . $date;

@@ -55,7 +55,7 @@ var homstmail = {
     'callback':function(frm){
         var data = frm.serialize();
         $.ajax({
-            url: '/mailer.php',
+            url: 'mailer.php',
             type: 'post',
             data: data,
             dataType: 'json',
