@@ -12,10 +12,10 @@
     <script src="js/jquery.min.js"></script>
 </head>
 <body>
-<header class="container">
+<header class="container-fluid">
     <?php include 'includes/header.html';?>
 </header>
-<div class="container">
+<div class="container-fluid">
     <div id="video-banner" class="row">
         <?php include 'includes/video-banner.html';?>
     </div>
@@ -59,7 +59,7 @@
         <!-- Modal content-->
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <img src="/images/CdkGV2B9Rzuu4MLXapyd5g.png" alt="callback"/>
+            <img src="images/CdkGV2B9Rzuu4MLXapyd5g.png" alt="callback"/>
             <h4>Заказать обратный звонок</h4>
             <form onsubmit="homstmail.callback($(this));return false;">
                 <input type="hidden" name="subj" value="Подключтить мой ЖК"/>
@@ -70,11 +70,11 @@
         </div>
     </div>
 </div>
-<div id="alerts"></div>
+<div id="alerts" class="alert"></div>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-<script src="js/notify.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
