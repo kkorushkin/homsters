@@ -74,6 +74,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="js/notify.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

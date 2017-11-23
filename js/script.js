@@ -66,11 +66,12 @@ var homstmail = {
             success: function(json) {
                 var message;
                 if(json == 1){
-                    message = 'Спасибо! Ваша заявка отправлена!';
+                    //message = 'Спасибо! Ваша заявка отправлена!';
+                    $.notify("Спасибо! Ваша заявка отправлена!", "success");
                 }else{
                     message = 'Ваше запрос не отправлен! Попробуйте повторить отправку через время или свяжитесь с нами по контактным телефонам.';
                 }
-                $('#alerts').html('<div id="add-msg" class="alert alert-success"> ' + message + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
+                //$('#alerts').html('<div id="add-msg" class="alert alert-success"> ' + message + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
 
                 $('#сall-me').modal('hide');
                 //$('html, body').animate({ scrollTop: 0 }, 'slow');

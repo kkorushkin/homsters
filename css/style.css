@@ -204,6 +204,7 @@ input:valid{border:1px solid green!important;}*/
     #why-we{color:#fff;margin:0 47px}
     #contact-us-one{margin:0 46px 60px}
     footer #level-one{margin:0 47px}
+    #contact-us-one>div:last-child{padding:25px 100px}
 }
 @media screen and (max-width:1300px){
     #header-top{margin:0}
@@ -214,10 +215,12 @@ input:valid{border:1px solid green!important;}*/
     #why-we{margin:0}
     #contact-us-one{margin:0 0 60px}
     footer #level-one{margin:0}
+    #contact-us-one>div:last-child{padding:25px 100px}
 }
 @media screen and (max-width:1200px){
     #testimanials-one>div>div{width:31.2%}
     #advantage-one>div{width:31.2%}
+    #contact-us-one>div:last-child{padding:25px 50px}
 }
 @media screen and (max-width:992px){
     .container{width:100%}
