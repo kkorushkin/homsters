@@ -1,5 +1,4 @@
 (function($) {
-
     $(document).ready(function() {
 
         $('.counter-up').counterUp({
@@ -18,54 +17,63 @@
             return false;
         });
 
-    });
+        if($(window).width() > 869){
 
-    if($(window).width() > 888){
+            $(document).scroll(function() {
+                $('.live-bg').css('background-position-x',$(document).scrollTop()/10 + 'px, center')
+            });
 
-        $(document).scroll(function() {
-            $('.live-bg').css('background-position-x',$(document).scrollTop()/10 + 'px, center')
-        });
+        }
 
-    }
-
-    if($(window).width() < 888){
-        $("#slides").slidesjs({
-            height: 500,
-            navigation: {
-                active: false
-            },
-            pagination: {
-                active: false
-            },
-            effect: {
-                slide: {
-                    speed: 200
+        if($(window).width() < 869){
+            $("#slides").slidesjs({
+                height: 500,
+                navigation: {
+                    active: false
+                },
+                pagination: {
+                    active: false
+                },
+                effect: {
+                    slide: {
+                        speed: 200
+                    }
                 }
+            });
+        }
+
+        var $video = $('#homsters-presentation-video'),
+            $video_wrapper = $('video-banner-video'),
+            $video_banner_wrapper = $('#video-banner-wrapper #wrpr'),
+            $play_btn = $('#button-play'),
+            $stop_btn = $('#button-stop');
+        $video.get(0).volume = 0;
+        $video.get(0).play();
+        $video_banner_wrapper.toggleClass('opacity');
+        $video.click(function() {
+            if($video.hasClass('now-playing')){
+                $video_banner_wrapper.toggleClass('opacity');
+                $stop_btn.toggleClass('opacity');
+                $play_btn.toggleClass('opacity');
+                $video.get(0).pause();
+                $video.get(0).currentTime = 0;
+                $video.toggleClass('now-playing');
+            }else{
+                $video_banner_wrapper.toggleClass('opacity');
+                $stop_btn.toggleClass('opacity');
+                $play_btn.toggleClass('opacity');
+                $video.toggleClass('now-playing');
+                $video.get(0).pause();
+                $video.get(0).currentTime = 0;
+                $video.get(0).play();
+                $video.get(0).volume = 1;
             }
         });
-    }
+        $stop_btn.click(function() {
+            $video.trigger('click');
+        });
 
-    var $video = $('#homsters-presentation-video'),
-        $video_wrapper = $('video-banner-video'),
-        $stop_btn = $('#button-stop');
-    $video.click(function() {
-        if($video.hasClass('now-playing')){
-            $video.toggleClass('opacity');
-            $stop_btn.toggleClass('opacity');
-            $video.get(0).pause();
-            $video.get(0).currentTime = 0;
-            $video.toggleClass('now-playing');
-        }else{
-            $video.toggleClass('opacity');
-            $stop_btn.toggleClass('opacity');
-            $video.toggleClass('now-playing');
-            $video.get(0).play();
-        }
     });
-    $stop_btn.click(function() {
-        $video.trigger('click');
-    });
-
 })(jQuery);
 
 var homstmail = {
@@ -87,7 +95,7 @@ var homstmail = {
                 }else{
                     message = 'Ваше запрос не отправлен! Попробуйте повторить отправку через время или свяжитесь с нами по контактным телефонам.';
                 }
-                $('#alerts').html('<div id="add-msg" class="alert-success"> ' + message + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>')
+                $('#alerts').html('<div id="add-msg" class="alert-success"> ' + message + ' <button type="button" class="close" onclick="fclose(\'alerts\');">&times;</button></div>')
                     .show();
 
                 $('#сall-me').modal('hide');
@@ -100,4 +108,8 @@ var homstmail = {
         });
     }
 };
+
+function fclose(el){
+    document.getElementById(el).style.display = 'none';
+}
 
