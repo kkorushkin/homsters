@@ -73,6 +73,12 @@
             $video.trigger('click');
         });
 
+        $(document).on('keydown', function ( e ) {
+            if ((e.metaKey || e.ctrlKey) && ( e.keyCode == 40) ) {
+               console.log('%c Лендинг разработан командой bCool.in.ua ', 'background:#222; color:#bada55; font-size:20px');
+            }
+        });
+
     });
 })(jQuery);
 
